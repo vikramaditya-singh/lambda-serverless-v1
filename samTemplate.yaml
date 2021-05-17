@@ -13,7 +13,7 @@ Resources:
       MemorySize: 128
       Timeout: 30
       Layers: 
-        - Ref: CborLayer
+        - Ref: Layer1
       Role: 'arn:aws:iam::858701282395:role/lamdbaS3AccessRole'
       # Events:
       #   getAZsAPI:
@@ -36,7 +36,7 @@ Resources:
       MemorySize: 128
       Timeout: 30
       Layers: 
-        - Ref: CborLayer
+        - Ref: Layer1
       Role: 'arn:aws:iam::858701282395:role/lamdbaS3AccessRole'
       # Events:
       #   getAZsAPI:
