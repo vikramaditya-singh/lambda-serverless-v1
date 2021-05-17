@@ -49,7 +49,7 @@ Resources:
   CborLayer:
     Type: AWS::Serverless::LayerVersion
     Properties:
-      ContentUri: ./layers/cbor-layer
+      ContentUri: ./layers/cbor-layer.zip
       CompatibleRuntimes:
         - python3.8
     Metadata:
