@@ -11,8 +11,8 @@ Resources:
       Description: 'Lambda function for CD POC'
       MemorySize: 128
       Timeout: 30
-      Layers: 
-        - Ref: CborLayer
+      # Layers: 
+      #   - Ref: CborLayer
       Role: 'arn:aws:iam::858701282395:role/lamdbaS3AccessRole'
       # Events:
       #   getAZsAPI:
@@ -33,8 +33,8 @@ Resources:
       Description: 'Lambda function for CD POC'
       MemorySize: 128
       Timeout: 30
-      Layers: 
-        - Ref: CborLayer
+      # Layers: 
+      #   - Ref: CborLayer
       Role: 'arn:aws:iam::858701282395:role/lamdbaS3AccessRole'
       # Events:
       #   getAZsAPI:
@@ -46,11 +46,11 @@ Resources:
         Variables:
           REGION: us-east-2
 
-  CborLayer:
-    Type: AWS::Serverless::LayerVersion
-    Properties:
-      ContentUri: ./layers/cbor-layer.zip
-      CompatibleRuntimes:
-        - python3.8
-    Metadata:
-      BuildMethod: python3.8
+  # CborLayer:
+  #   Type: AWS::Serverless::LayerVersion
+  #   Properties:
+  #     ContentUri: ./layers/cbor-layer.zip
+  #     CompatibleRuntimes:
+  #       - python3.8
+  #   Metadata:
+  #     BuildMethod: python3.8
