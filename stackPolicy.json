@@ -5,7 +5,7 @@
       "Effect" : "Deny",
       "Principal" : "*",
       "Action" : "Update:*",
-      "Resource" : ["Lambda3"]
+      "Resource" : "LogicalResourceId/Lambda3"
     },
     {
       "Effect" : "Allow",
