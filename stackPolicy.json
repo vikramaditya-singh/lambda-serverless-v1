@@ -1,10 +1,17 @@
 {
+  "Version":"2012-10-17",
   "Statement" : [
-  {
-    "Effect" : "Deny",
-    "Principal" : "*",
-    "Action" : "Update:*",
-    "Resource" : ["Lambda3"]
-  }
+    {
+      "Effect" : "Deny",
+      "Principal" : "*",
+      "Action" : "Update:*",
+      "Resource" : ["Lambda3"]
+    },
+    {
+      "Effect" : "Allow",
+      "Action" : "Update:*",
+      "Principal": "*",
+      "Resource" : "*"
+    }
   ]
 }
