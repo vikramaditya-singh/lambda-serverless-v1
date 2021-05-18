@@ -3,6 +3,7 @@ phases:
   install:
     commands:
       - aws cloudformation package --template-file samTemplate.yaml --s3-bucket vikram-cd-pipeline-lambda --output-template-file outputSamTemplate.yaml
+      - aws cloudformation --stack-name lambdaCDPOCStatck set-stack-policy --stack-policy-url stack-policy.json
 artifacts:
   type: zip
   files:
