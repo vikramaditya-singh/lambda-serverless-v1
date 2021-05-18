@@ -5,12 +5,6 @@
       "Action" : "Update:Modify",
       "Principal": "*",
       "Resource" : "LogicalResourceId/Lambda3"
-    },
-    {
-      "Effect" : "Deny",
-      "Principal" : "*",
-      "Action" : "Update:*",
-      "Resource" : "*"
     }
   ]
 }
