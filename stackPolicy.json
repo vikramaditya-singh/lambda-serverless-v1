@@ -2,9 +2,9 @@
   "Statement" : [
     {
       "Effect" : "Allow",
-      "Action" : "Update:Modify",
-      "Principal": "*",
-      "Resource" : "LogicalResourceId/Lambda3"
+      "Principal" : "*",
+      "Action" : "Update:*",
+      "Resource" : "*"
     }
   ]
 }
