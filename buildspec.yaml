@@ -9,3 +9,4 @@ artifacts:
   files:
     - samTemplate.yaml
     - outputSamTemplate.yaml
+    - stack-policy.json
