@@ -1,17 +1,16 @@
 {
-  "Version":"2012-10-17",
   "Statement" : [
-    {
-      "Effect" : "Deny",
-      "Principal" : "*",
-      "Action" : "Update:*",
-      "Resource" : "LogicalResourceId/Lambda3"
-    },
     {
       "Effect" : "Allow",
       "Action" : "Update:*",
       "Principal": "*",
       "Resource" : "*"
+    },
+    {
+      "Effect" : "Deny",
+      "Principal" : "*",
+      "Action" : "Update:*",
+      "Resource" : "LogicalResourceId/Lambda3"
     }
   ]
 }
