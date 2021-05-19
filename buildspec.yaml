@@ -8,6 +8,6 @@ phases:
 artifacts:
   type: zip
   files:
-    - samTemplate.yaml
-    - outputSamTemplate.yaml
+    # - samTemplate.yaml
+    # - outputSamTemplate.yaml
     - stackPolicy.json
