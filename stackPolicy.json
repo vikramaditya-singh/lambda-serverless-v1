@@ -5,6 +5,12 @@
       "Principal" : "*",
       "Action" : "Update:*",
       "Resource" : "*"
+    },
+    {
+      "Effect" : "Deny",
+      "Principal" : "*",
+      "Action" : "Update:*",
+      "Resource" : "LogicalResourceId/Lambda3"
     }
   ]
 }
