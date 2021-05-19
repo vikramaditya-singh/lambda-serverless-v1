@@ -2,12 +2,12 @@ version: 0.1
 phases:
   install:
     commands:
-      - aws cloudformation update-stack --stack-name lambdaCDPOCStatck --use-previous-template --stack-policy-body file://stackPolicy.json
+      - aws cloudformation update-stack --stack-name lambdaCDPOCStatck --template-body file://samTemplate.yaml --stack-policy-body file://stackPolicy.json
       # - aws cloudformation package --template-file samTemplate.yaml --s3-bucket vikram-cd-pipeline-lambda --output-template-file outputSamTemplate.yaml
       # - aws cloudformation set-stack-policy --stack-name lambdaCDPOCStatck --stack-policy-body file://stackPolicy.json
 artifacts:
   type: zip
   files:
-    # - samTemplate.yaml
-    # - outputSamTemplate.yaml
+    - samTemplate.yaml
+    - outputSamTemplate.yaml
     - stackPolicy.json
